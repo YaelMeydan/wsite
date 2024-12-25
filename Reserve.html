@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/composition.css" />
+    <link rel="stylesheet" href="dist/utilities.css" />
+</head>
+</header>
+<nav class="[ top-nav-style ] " >
+    <figure class=" [ page-nav ]">
+        <a href="index.html" > Go to home page </a>
+    </figure>
+    <h1> Dairylicious </h1>
+    <p popover id="phone">Call us: 058-5808033</p>
+    <button class=" [ info-buttons ] " type="button" popovertarget="phone" popovertargetaction="toggle" value="Toggle">
+        <a href="tel:058-5808-033"><img background="none" src="phoneicon.png" /></a>
+    </button>
+    <p popover id="address">Our address: 29 Hamered Street , Tel Aviv 68125. P.O.Box 50084. </p>
+    <button class=" [ info-buttons ] "  type="button" popovertarget="address" popovertargetaction="toggle" value="Toggle">
+        <img background="none" src="mapicon.png"/>
+    </button>
+</nav>
+</header>
+<body>
+    <h2>Reserve a table / Contact us:</h2>
+    <img src="restaurantday.jpeg" alt="photo of the restaurant day" style="width: 30vw;"/>
+    <article class="contactform">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f995202a-6259-4b3c-8a3c-eebe4c0935dc">
+          <label for="fullname">Your full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Write here your full name.." required>
+      
+          <label for="clientdetails">How to reach you:</label>
+          <input type="number  email" id="clientdetails" name="clientdetails" placeholder="write  here your phone number or E-mail adress.." required>
+      
+          <label for="subject">Your message:</label>
+          <textarea id="subject" name="subject" placeholder="Write here that date and time you wish to arrive / other subjects you wish to ask about.." style="height:200px" required></textarea>
+      
+          <button type="submit" value="Submit">Submit</button>
+        </form>
+    </article>
+</body>
+<footer>
+    <article class="footer">
+        <p>&copy;all rights reserved 2024 </p>
+        <button>
+            <a href="">www.Dairylicious.com</a>
+        </button>
+    </article>
+ </footer>
+</html>
+</html>
